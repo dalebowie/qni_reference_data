@@ -3,9 +3,9 @@
 This repository contains a series of python scripts that can be used to populate reference data in a QRadar deployment with one or more QRadar Network Insights hosts. 
 
 Currently, this repository hosts the following:
-* ja3er_to_qradar.py - obtains TLS JA3 hashes from [ja3er.com](https://ja3er.com), performs some filtering, and then posts to a QRadar Reference Map named "`QNI : JA3er Hashes', "TLS JA3 Hash`".
-* abusechsslbl_to_qradar.py - obtains the "SSLBL SSL Certificate Blacklist (SHA1 Fingerprints)" from [abuse.ch](https://abuse.ch), and then posts to a QRadar Reference Map named "`QNI : Abuse.ch SSL Certificate Blocklist Hashes`".
-* abusechja3bl_to_qradar.py - obtains the "JA3 Fingerprint Blacklist" from [abuse.ch](https://abuse.ch), and then posts to a QRadar Reference Map named "`QNI : Abuse.ch JA3 Blocklist Hashes`".
+* ja3er_to_qradar.py - obtains TLS JA3 hashes from [ja3er.com](https://ja3er.com), performs some filtering, and then posts to a QRadar Reference Map named `QNI : JA3er Hashes`.
+* abusechsslbl_to_qradar.py - obtains the "SSLBL SSL Certificate Blacklist (SHA1 Fingerprints)" from [abuse.ch](https://abuse.ch), and then posts to a QRadar Reference Map named `QNI : Abuse.ch SSL Certificate Blocklist Hashes`.
+* abusechja3bl_to_qradar.py - obtains the "JA3 Fingerprint Blacklist" from [abuse.ch](https://abuse.ch), and then posts to a QRadar Reference Map named `QNI : Abuse.ch JA3 Blocklist Hashes`.
 
 
 ## Usage

@@ -19,7 +19,7 @@ import requests
 import csv
 import os
 
-class AbuseCh():
+class AbuseChSslBl():
     FILE_NAME = "abuse_ch_sslbl.csv"
 
     # Column orders

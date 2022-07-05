@@ -18,19 +18,19 @@
 
 from QRadarArgumentParser import QRadarArgumentParser
 from QRadarAPI import QRadarAPI
-from AbuseCh import AbuseCh
+from AbuseChJa3Bl import AbuseChJa3Bl
 
 parser = QRadarArgumentParser()
 args = parser.parse_args()
 
 qapi = QRadarAPI(args.qradar_host, args.qradar_token, args.skip_verify_qradar)
 
-ref_map_name = "QNI : Abuse.ch SSL Certificate Blocklist Hashes"
+ref_map_name = "QNI : Abuse.ch JA3 Blocklist Hashes"
 ref_map = qapi.get_or_create_reference_map(ref_map_name,
-                                           "sha1_hash",
+                                           "ja3_hash",
                                            "reason")
 
-sslbl = AbuseCh(args.force_download)
+sslbl = AbuseChJa3Bl(args.force_download)
 hashes = sslbl.get_as_dict()
 
 map_data = qapi.update_reference_map_values(ref_map_name, hashes)
